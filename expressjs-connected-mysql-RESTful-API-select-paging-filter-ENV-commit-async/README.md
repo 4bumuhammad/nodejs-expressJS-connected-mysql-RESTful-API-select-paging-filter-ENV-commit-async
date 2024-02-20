@@ -285,17 +285,19 @@ untuk mengatasi hal tersebut lakukan langkah berikut:
 
         curl -X GET "http://localhost:3000/api/data/filter?filterField=nama&filterValue=Ava%20Lopez&page=1&limit=5"
 
-output :
+    output :
 
         {"page":1,"limit":5,"total":1,"data":[{"id":16,"nama":"Ava Lopez","alamat":"Jalan Raya 543"}]}
 
+        
+
 - contoh 2 ( atau dapat juga dengan demikian saja)
 
-    curl -X GET "http://localhost:3000/api/data/filter?filterField=nama&filterValue=Ava%20Lopez"
+        curl -X GET "http://localhost:3000/api/data/filter?filterField=nama&filterValue=Ava%20Lopez"
 
-output :
+    output :
 
-    {"page":1,"limit":10,"total":1,"data":[{"id":16,"nama":"Ava Lopez","alamat":"Jalan Raya 543"}]}
+        {"page":1,"limit":10,"total":1,"data":[{"id":16,"nama":"Ava Lopez","alamat":"Jalan Raya 543"}]}
 
 
 ---
